@@ -12,8 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20160917171643) do
 
-  create_table "orders", force: :cascade do |t|
-    t.integer "ord_no"
+  create_table "orders", primary_key: "ord_no", force: :cascade do |t|
     t.integer "purch_amt"
     t.integer "customer_id"
     t.integer "salesman_id"

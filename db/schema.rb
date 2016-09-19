@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160919172625) do
+ActiveRecord::Schema.define(version: 20160919173220) do
 
   create_table "customers", primary_key: "customer_id", force: :cascade do |t|
     t.string  "cust_name"
@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 20160919172625) do
     t.datetime "ord_date"
   end
 
-  create_table "salesmans", primary_key: "salesman_id", force: :cascade do |t|
+  create_table "salesmen", primary_key: "salesman_id", force: :cascade do |t|
     t.string  "name"
     t.string  "city"
     t.integer "commission"

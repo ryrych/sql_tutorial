@@ -12,10 +12,10 @@ FactoryGirl.define do
   end
 
   factory :order do
-    purch_amt { rand(500..2000) }
-    ord_date { FFaker::Time.date }
-
     customer
     salesman
+
+    purch_amt { rand(500..2000) }
+    ord_date { FFaker::Time.date }
   end
 end

@@ -32,6 +32,7 @@ Now run from *vim* command mode
 
 - Change seeds to reflect more or less data from exercises
 - Change orders datetime to date for simplicity
+- Reword challenges (be more explicit); see http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-9.php
 - Format SQL => multiline (check how to make it work with `Rdbext`)
 - Clean up
 - Add info how to set it up

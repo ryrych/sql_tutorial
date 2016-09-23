@@ -13,6 +13,16 @@ Table name are plural:
 
 `commission` is kept as *integer*; `0.15` => `15`
 
+## Querying database from *vim*
+
+install...
+
+Now run from *vim* command mode
+
+```
+:Rdbext
+```
+
 ## Other
 
 - Number of records is limited for the sake of simplicity

@@ -57,7 +57,7 @@ salesman_id  name                 city            commission
 515          Miss Richie Raynor   North Tressie   6         
 ```
 
-[Solution](http://www.w3resource.com/sql-exercises/sql-retrieve-exercise-1.php)
+[Original solution](http://www.w3resource.com/sql-exercises/sql-retrieve-exercise-1.php)
 
 ## 2. Write a sql statement to display a string “This is SQL Exercise, Practice and Solution”
 
@@ -71,7 +71,7 @@ Select "This is SQL Exercise, Practice and Solution";
 This is SQL Exercise, Practice and Solution  
 ```
 
-[Solution](http://www.w3resource.com/sql-exercises/sql-retrieve-exercise-2.php)
+[Original solution](http://www.w3resource.com/sql-exercises/sql-retrieve-exercise-2.php)
 
 ## 3. Write a query to display three numbers in three columns
 
@@ -85,7 +85,7 @@ Select 2, 3, 5, 7;
 2           3           5           7         
 ```
 
-[Solution](http://www.w3resource.com/sql-exercises/sql-retrieve-exercise-3.php)
+[Original solution](http://www.w3resource.com/sql-exercises/sql-retrieve-exercise-3.php)
 
 ## 4. Write a query to display the sum of two numbers 10 and 15 from RDMS sever. 
 
@@ -99,7 +99,7 @@ Select 25 + 57;
 82        
 ```
 
-[Solution](http://www.w3resource.com/sql-exercises/sql-retrieve-exercise-4.php)
+[Original solution](http://www.w3resource.com/sql-exercises/sql-retrieve-exercise-4.php)
 
 ## 5. Write a query to display the result of an arithmetic expression
 
@@ -113,7 +113,7 @@ Select (23 + 57) * 42;
 3360          
 ```
 
-[Solution](http://www.w3resource.com/sql-exercises/sql-retrieve-exercise-5.php)
+[Original solution](http://www.w3resource.com/sql-exercises/sql-retrieve-exercise-5.php)
 
 ## 6. Write a sql statement to display specific columns like name and commission for all the salesmen.
 
@@ -131,7 +131,7 @@ Mrs. Sharon Howe     23
 Miss Richie Raynor   6         
 ```
 
-[Solution](http://www.w3resource.com/sql-exercises/sql-retrieve-exercise-6.php)
+[Original solution](http://www.w3resource.com/sql-exercises/sql-retrieve-exercise-6.php)
 
 ## 7. Write a query to display the columns in a specific order like order date, salesman id, order number and purchase amount from for all the orders.
 
@@ -149,7 +149,7 @@ ord_date             salesman_id  ord_no      purch_amt
 2014-10-09 22:00:00  517          505         1218      
 ```
 
-[Solution](http://www.w3resource.com/sql-exercises/sql-retrieve-exercise-7.php)
+[Original solution](http://www.w3resource.com/sql-exercises/sql-retrieve-exercise-7.php)
 
 ## 8. Write a query which will retrieve the value of salesman id of all salesmen, getting orders from the customers in orders table without any repeats.
 
@@ -163,7 +163,7 @@ salesman_id
 517        
 ```
 
-[Solution](http://www.w3resource.com/sql-exercises/sql-retrieve-exercise-8.php)
+[Original solution](http://www.w3resource.com/sql-exercises/sql-retrieve-exercise-8.php)
 
 ## 9. Write a sql statement to display names and city of salesman, who belongs to the city of Paris. 
 
@@ -175,7 +175,7 @@ Select name, city from salesmen where city = 'Paris';
 fake it
 ```
 
-[Solution](http://www.w3resource.com/sql-exercises/sql-retrieve-exercise-9.php)
+[Original solution](http://www.w3resource.com/sql-exercises/sql-retrieve-exercise-9.php)
 
 ## 10. Write a sql statement to display all the information for those customers with a grade of 200.
 
@@ -189,7 +189,7 @@ customer_id  cust_name       city        grade
 524          Demond Reichel  Coleberg    200       
 ```
 
-[Solution](http://www.w3resource.com/sql-exercises/sql-retrieve-exercise-10.php)
+[Original solution](http://www.w3resource.com/sql-exercises/sql-retrieve-exercise-10.php)
 
 ## 11. Write a sql query to display the order number followed by order date and the purchase amount for each order which will be delivered by the salesman who is holding the ID 5001.
 
@@ -225,7 +225,7 @@ customer_id  cust_name     city           grade
 507          Alessandra B  New Percivalt  279       
 ```
 
-[Solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-1.php)
+[Original solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-1.php)
 
 ## 2. Write a query statement to display all customers in New York who have a grade value above 100.
 
@@ -243,7 +243,7 @@ customer_id  cust_name     city           grade
 517          Marilou Gusi  East Rowanlan  119       
 ```
 
-[Solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-2.php)
+[Original solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-2.php)
 
 ## 3. Write a SQL statement to display all customers, who are either belongs to the city New York or had a grade above 100.
 
@@ -261,7 +261,7 @@ customer_id  cust_name     city           grade
 507          Alessandra B  New Percivalt  279       
 ```
 
-[Solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-3.php)
+[Original solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-3.php)
 
 ## 4. Write a SQL statement to display all the customers, who are either belongs to the city New York or not had a grade above 100.
 
@@ -279,7 +279,7 @@ customer_id  cust_name     city           grade
 507          Alessandra B  New Percivalt  279       
 ```
 
-[Solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-4.php)
+[Original solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-4.php)
 
 ## 5.Write a SQL query to display those customers who are neither belongs to the city New York nor grade value is more than 100.
 
@@ -293,7 +293,7 @@ customer_id  cust_name           city         grade
 511          Keagan Heidenreich  Littelhaven  100       
 ```
 
-[Solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-5.php)
+[Original solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-5.php)
 
 ## 6. Write a SQL statement to display either those orders which is not issued on date 2012-09-10 and issued by the salesman whose ID is 505 and below or those orders which purchase amount is 1000.00 and below.
 
@@ -311,7 +311,7 @@ ord_no      purch_amt   customer_id  salesman_id  ord_date
 506         1663        536          517          2013-06-03 22:00:00
 ```
 
-[Solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-6.php)
+[Original solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-6.php)
 
 ## 7.Write a SQL statement to display salesman_id, name, city and commission who gets the commission within the range more than 0.10% and less than 0.12%.
 

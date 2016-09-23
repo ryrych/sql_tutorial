@@ -205,3 +205,133 @@ ord_no      ord_date             purch_amt
 504         2012-09-10 22:00:00  1238      
 505         2014-10-09 22:00:00  1218      
 ```
+
+# Using Boolean and Relational operators [link](http://www.w3resource.com/sql-exercises/sql-boolean-operators.php)
+
+## 1. Write a query to display all customers with a grade above 100.
+
+```
+Select * from customers where grade > 100;
+```
+
+```
+customer_id  cust_name     city           grade     
+-----------  ------------  -------------  ----------
+503          Rodolfo Jast  North Lisette  259       
+504          Joanny Harri  Sydniechester  154       
+505          Amelia Abbot  Port Sandrine  145       
+506          Miss Shane C  Shanaborough   240       
+507          Alessandra B  New Percivalt  279       
+```
+
+[Solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-1.php)
+
+## 2. Write a query statement to display all customers in New York who have a grade value above 100.
+
+```
+Select * from customers where city = 'New York' and grade > 100;
+```
+
+```
+customer_id  cust_name     city           grade     
+-----------  ------------  -------------  ----------
+513          Dino Gleichn  East Vivienfo  271       
+514          Callie Jones  Lednermouth    215       
+515          Khalil Jewes  West Madilynp  281       
+516          Winston Kris  South Giovann  335       
+517          Marilou Gusi  East Rowanlan  119       
+```
+
+[Solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-2.php)
+
+## 3. Write a SQL statement to display all customers, who are either belongs to the city New York or had a grade above 100.
+
+```
+Select * from customers where city = 'New York' or grade > 100;
+```
+
+```
+customer_id  cust_name     city           grade     
+-----------  ------------  -------------  ----------
+503          Rodolfo Jast  North Lisette  259       
+504          Joanny Harri  Sydniechester  154       
+505          Amelia Abbot  Port Sandrine  145       
+506          Miss Shane C  Shanaborough   240       
+507          Alessandra B  New Percivalt  279       
+```
+
+[Solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-3.php)
+
+## 4. Write a SQL statement to display all the customers, who are either belongs to the city New York or not had a grade above 100.
+
+```
+Select * from customers where city = 'New York' or not grade > 100;
+```
+
+```
+customer_id  cust_name     city           grade     
+-----------  ------------  -------------  ----------
+503          Rodolfo Jast  North Lisette  259       
+504          Joanny Harri  Sydniechester  154       
+505          Amelia Abbot  Port Sandrine  145       
+506          Miss Shane C  Shanaborough   240       
+507          Alessandra B  New Percivalt  279       
+```
+
+[Solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-4.php)
+
+## 5.Write a SQL query to display those customers who are neither belongs to the city New York nor grade value is more than 100.
+
+```
+Select * from customers where not (city = 'New York' or grade > 100);
+```
+
+```
+customer_id  cust_name           city         grade     
+-----------  ------------------  -----------  ----------
+511          Keagan Heidenreich  Littelhaven  100       
+```
+
+[Solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-5.php)
+
+## 6. Write a SQL statement to display either those orders which is not issued on date 2012-09-10 and issued by the salesman whose ID is 505 and below or those orders which purchase amount is 1000.00 and below.
+
+```
+Select * from orders where not ((ord_date like '%2016-12-19%' and salesman_id <= 500) or purch_amt < 1000);
+```
+
+```
+ord_no      purch_amt   customer_id  salesman_id  ord_date           
+----------  ----------  -----------  -----------  -------------------
+502         1772        536          517          2012-04-19 22:00:00
+503         1577        536          517          2015-04-10 22:00:00
+504         1238        536          517          2012-09-10 22:00:00
+505         1218        536          517          2014-10-09 22:00:00
+506         1663        536          517          2013-06-03 22:00:00
+```
+
+[Solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-6.php)
+
+## 7.Write a SQL statement to display salesman_id, name, city and commission who gets the commission within the range more than 0.10% and less than 0.12%.
+
+```
+Select salesman_id, name, city, commission from salesmen where commission between 10 and 12;
+```
+
+```
+Select salesman_id, name, city, commission from salesmen where (commission > 10 and commission < 12);
+```
+
+```
+salesman_id  name                 city            commission
+-----------  -------------------  --------------  ----------
+511          Dr. Archibald Yundt  West Treyville  52        
+512          Pasquale Wisoky      South Taylor    52        
+514          Mrs. Sharon Howe     East Murlburgh  23        
+516          Dulce Maggio         Lake Jerrell    40        
+520          Ewald Roberts        New Greyson     35        
+```
+
+[Solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-7.php)
+
+## 8. Write a SQL query to display all orders where purchase amount less than a specified amount or order date and customer_id must not be greater than a specified data and less than a specified ID respectively.

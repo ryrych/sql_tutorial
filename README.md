@@ -332,6 +332,93 @@ salesman_id  name                 city            commission
 520          Ewald Roberts        New Greyson     35        
 ```
 
-[Solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-7.php)
+[Original solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-7.php)
 
-## 8. Write a SQL query to display all orders where purchase amount less than a specified amount or order date and customer_id must not be greater than a specified data and less than a specified ID respectively.
+## 8. Some fancy and better title
+
+Where:
+
+- Purchase amount is less than 200 OR
+- Order date is less or equal to '2012-02-10' AND
+- For all customers with `customer_id` less than 300
+
+```
+Select * from orders where (purch_amt < 200 or not (ord_date >= '2012-02-10' and customer_id < 300));
+```
+
+```
+ord_no      purch_amt   customer_id  salesman_id  ord_date           
+----------  ----------  -----------  -----------  -------------------
+501         1246        536          517          2016-12-19 23:00:00
+502         1772        536          517          2012-04-19 22:00:00
+503         1577        536          517          2015-04-10 22:00:00
+504         1238        536          517          2012-09-10 22:00:00
+505         1218        536          517          2014-10-09 22:00:00
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-8.php)
+
+## 9. Where not
+
+Your mission is to display orders using `WHERE NOT`, where:
+
+- Order dates equal to '2016-01-15', OR
+- Customer id is greater than 150 AND
+- Purchase amount is less than 360
+
+```
+Select * from orders where (ord_date like '%2016-01-15%' or (customer_id > 150 AND purch_amt < 360));
+```
+
+```
+ord_no      purch_amt   customer_id  salesman_id  ord_date           
+----------  ----------  -----------  -----------  -------------------
+501         1246        536          517          2016-12-19 23:00:00
+502         1772        536          517          2012-04-19 22:00:00
+503         1577        536          517          2015-04-10 22:00:00
+504         1238        536          517          2012-09-10 22:00:00
+505         1218        536          517          2014-10-09 22:00:00
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-9.php)
+
+### Note
+
+The original exercise wording is very misleading. It is not about getting reversed collection, but using `WHERE NOT`. Compare:
+
+```
+Select * from orders where ((ord_date like '%2016-01-15%' AND customer_id > 150) OR purch_amt < 360);
+```
+
+With:
+
+```
+Select * from orders where not ((ord_date like '%2016-01-15%' OR customer_id > 150) AND purch_amt < 360);
+```
+
+## 10. Hit the target
+
+Your task is to display
+
+- Order number
+- Purchase amount
+- Percentage of achieved target, and
+- Percentage of unachieved target
+
+List only those orders which exceeds the 50% of target value of 6000.
+
+```
+Select ord_no, purch_amt, (100 * purch_amt / 6000) AS "Achieved %", (100 * (6000 - purch_amt) / 6000) AS "Unachieved %" from orders WHERE (100 * purch_amt) / 6000 > 50;
+```
+
+```
+ord_no      purch_amt   Achieved %  Unachieved %
+----------  ----------  ----------  ------------
+501         1246        20          79          
+502         1772        29          70          
+503         1577        26          73          
+504         1238        20          79          
+505         1218        20          79          
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-10.php)

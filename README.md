@@ -30,6 +30,9 @@ Now run from *vim* command mode
 
 ## TODO
 
+- Change seeds to reflect more or less data from exercises
+- Change orders datetime to date for simplicity
+- Format SQL => multiline (check how to make it work with `Rdbext`)
 - Clean up
 - Add info how to set it up
 - How to query database from *vim*

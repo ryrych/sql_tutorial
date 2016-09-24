@@ -24,15 +24,9 @@ Table name are plural:
 
 `commission` is kept as *integer*; `0.15` => `15`
 
-## Querying database from *vim*
+## Querying database from inside Vim
 
-install...
-
-Now run from *vim* command mode
-
-```
-:Rdbext
-```
+[See my protip](http://ryrych.pl/protips/2016-05-09-querying-database-from-inside-the-vim-protip/)
 
 ## Other
 

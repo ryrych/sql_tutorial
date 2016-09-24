@@ -32,10 +32,55 @@ Table name are plural:
 
 http://sqlitebrowser.org/
 
-## Other
+## Example data
 
-- Number of records is limited for the sake of simplicity
-- You will get different result depending on seeded data (`rake db:seed`)
+### salesmen
+
+```
+Select * from salesmen;
+```
+
+```
+salesman_id  name            city         commission
+-----------  --------------  -----------  ----------
+1            Prudence Boehm  Aryannafort  27        
+2            Josiane Swift   Maziemouth   97        
+3            Mrs. Gwen O'Ke  Fayport      78        
+4            Mike Borer      West Cateri  79        
+5            Fiona Keeling   Laurencevie  71        
+```
+
+### customers
+
+```
+Select * from customers
+```
+
+```
+customer_id  cust_name      city               grade     
+-----------  -------------  -----------------  ----------
+1            Zoila Witting  Port Oletaborough  451       
+2            Maritza Jenki  West Susieberg     140       
+3            Larissa Rober  New Jakechester    219       
+4            Blanche Champ  Dickensfort        238       
+5            Evangeline Bi  Lake Jarod         274       
+```
+
+### orders
+
+```
+Select * from orders
+```
+
+```
+ord_no      purch_amt   customer_id  salesman_id  ord_date           
+----------  ----------  -----------  -----------  -------------------
+1           980         60           9            2014-01-01 23:00:00
+2           653         60           9            2014-10-02 22:00:00
+3           1035        60           9            2012-01-08 23:00:00
+4           903         60           9            2015-12-19 23:00:00
+5           613         60           9            2014-01-07 23:00:00
+```
 
 ## TODO
 

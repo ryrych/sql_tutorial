@@ -28,6 +28,10 @@ Table name are plural:
 
 [See my protip](http://ryrych.pl/protips/2016-05-09-querying-database-from-inside-the-vim-protip/)
 
+## Querying database with DB Browser for SQLite
+
+http://sqlitebrowser.org/
+
 ## Other
 
 - Number of records is limited for the sake of simplicity

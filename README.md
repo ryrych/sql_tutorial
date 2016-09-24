@@ -3,6 +3,17 @@
 I was to lazy to add records manually and too lazy to search for a database.
 License: *idontcareware*.
 
+## Setup
+
+```
+git clone git@github.com:ryrych/sql_tutorial.git
+bundle install
+rake db:create
+rake db:migrate
+rake db:seed
+rails server
+```
+
 ## Differences
 
 Table name are plural:

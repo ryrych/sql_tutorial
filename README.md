@@ -44,9 +44,6 @@ http://sqlitebrowser.org/
 - Reword challenges (be more explicit); see http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-9.php
 - Format SQL => multiline (check how to make it work with `Rdbext`)
 - Clean up
-- Add info how to set it up
-- How to query database from *vim*
-- How to query from [DB Browser for SQLite](http://sqlitebrowser.org/)
 
 # Retrieve data from tables [link](http://www.w3resource.com/sql-exercises/sql-retrieve-from-table.php)
 

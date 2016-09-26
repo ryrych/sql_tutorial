@@ -321,3 +321,111 @@ Select ord_no, purch_amt, (100 * purch_amt / 6000) AS "Achieved %", (100 * (6000
 ```
 
 [Original solution](http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-10.php)
+
+# Wildcard and Special operators [link](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operators.php)
+
+## 1. Write a SQL statement to find those salesmen with all information who come from the city either Paris or Rome
+
+```
+Select * from salesmen where city = 'Paris' or city = 'Rome';
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-1.php)
+
+## Write a query to filter those salesmen with all information who comes from any of the cities Paris and Rome.
+
+```
+Select * from salesmen where city in('Paris', 'Rome');
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-2.php)
+
+## Write a query to filter those salesmen with all information who likes to leave other cities than Paris and Rome.
+
+```
+Select * from salesmen where not (city = 'Paris' or city = 'Rome');
+```
+
+```
+Select * from salesmen where city not in('Paris', 'Rome');
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-3.php)
+
+## 4. Write a query to sort out those customers with all information whose ID value is within any of 3007, 3008 and 3009.
+
+```
+Select * from salesmen where salesman_id in(3007, 3008, 3009);
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-4.php)
+
+## 5. Write a SQL statement to find those salesmen with all information who gets the commission within a range of 0.12 and 0.14. 
+
+```
+Select * from salesmen where commission between 12 and 14;
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-5.php)
+
+## 6. Write a query to filter all those orders with all information which purchase amount value is within the range 500 and 4000 except those orders of purchase amount value 948.50 and 1983.43.
+
+```
+Select * from orders where (purch_amt between 500 and 400) and not purch_amt in(948, 1983);
+```
+
+```
+Select * from orders where (purch_amt between 500 and 400) except select * from orders where purch_amt in(948, 1983);
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-6.php)
+
+## 7. Write a SQL statement to find those salesmen with all other information and name started with any latter 'A' and 'L'.
+
+```
+Select * from salesmen where name between 'A' and 'L';
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-7.php)
+
+[Question on stackoverflow](http://stackoverflow.com/questions/5980783/sql-between-clause-with-strings-columns)
+
+## 8. Write a SQL statement to find those salesmen with all other information and name started with other than any latter within 'A' and 'L'.
+
+```
+Select * from salesmen where name not between 'A' and 'L';
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-8.php)
+
+## 9. Write a SQL statement to find those customer with all information whose name begin with the letter 'B'.
+
+```
+Select * from customers where cust_name like 'B%';
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-9.php)
+
+## 10. Write a SQL statement to find all those customer with all information whose names are ending with the letter 'n'
+
+```
+Select * from customers where cust_name like '%n';
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-10.php)
+
+## 11. Write a SQL statement to find those salesmen with all information whose name contain only four characters, in which 1st character must be 'N' and 4th character is l and rests may be any character.
+
+```
+Select * from salesmen where name like 'N__l%';
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-11.php)
+
+## 12. Write a SQL statement to find those rows from the table testtable which contain the escape character underscore ( _ ) in its column 'col1'.
+
+```
+Select * from salesmen where city = 'Paris' or city = 'Rome';
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-11.php)

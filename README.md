@@ -87,6 +87,7 @@ ord_no      purch_amt   customer_id  salesman_id  ord_date
 - Reword challenges (be more explicit); see http://www.w3resource.com/sql-exercises/sql-boolean-operator-exercise-9.php
 - Format SQL => multiline (check how to make it work with `Rdbext`)
 - Clean up
+- Short screencast how to query from inside vim
 
 # Retrieve data from tables [link](http://www.w3resource.com/sql-exercises/sql-retrieve-from-table.php)
 

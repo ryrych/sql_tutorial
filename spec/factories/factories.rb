@@ -18,4 +18,8 @@ FactoryGirl.define do
     purch_amt { rand(500..2000) }
     ord_date { FFaker::Time.date }
   end
+
+  factory :testable do
+    col1 { FFaker::Guid.guid }
+  end
 end

@@ -429,3 +429,80 @@ Select * from testables where col1 like '%/_%' escape '/';
 ```
 
 [Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-12.php)
+
+### Resources
+
+- http://stackoverflow.com/questions/8764370/escaping-special-characters-in-sql
+- https://docs.oracle.com/cd/B10500_01/text.920/a96518/cqspcl.htm
+
+## 13. Write a SQL statement to find those rows from the table testtable which does not contain the character underscore ( _ ) in its column 'col1'.
+
+```
+Select * from testables where not col1 like '%/_%' escape '/';
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-13.php)
+
+## 14. Write a SQL statement to find those rows from the table testtable which contain the escape character ( / ) in its column 'col1'.
+
+```
+Select * from testables where col1 like '%//%' escape '/';
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-14.php)
+
+## 15. Write a SQL statement to find those rows from the table testtable which does not contain the escape character ( / ) in its column 'col1'
+
+```
+Select * from testables where not col1 like '%//%' escape '/';
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-15.php)
+
+## 16. Write a SQL statement to find those rows from the table testtable which contain the string ( _/ ) in its column 'col1'.
+
+```
+Select * from testables where col1 like '%/_//%' escape '/';
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-16.php)
+
+## 17. Write a SQL statement to find those rows from the table testtable which does not contain the string ( _/ ) in its column 'col1'.
+
+```
+Select * from testables where col1 not like '%/_//%' escape '/';
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-17.php)
+
+## 18. Write a SQL statement to find those rows from the table testtable which contain the character ( % ) in its column 'col1'.
+
+```
+Select * from testables where col1 like '%/%%' escape '/';
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-18.php)
+
+## 19. Write a SQL statement to find those rows from the table testtable which does not contain the character ( % ) in its column 'col1'.
+
+```
+Select * from testables where col1 not like '%//%' escape '/';
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-19.php)
+
+## 20. Write a SQL statement to find those customer with all information who does not get any grade except NULL.
+
+```
+Select * from customers where grade is null;
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-20.php)
+
+## 21. Write a SQL statement to find those customer with all information who gets a grade except NULL value.
+
+```
+Select * from customers where grade is not null;
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-21.php)

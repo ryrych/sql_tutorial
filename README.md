@@ -506,3 +506,33 @@ Select * from customers where grade is not null;
 ```
 
 [Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-21.php)
+
+# Aggregate Functions [link](http://www.w3resource.com/sql-exercises/sql-aggregate-functions.php)
+
+## 1. Write a SQL statement to find the total purchase amount of all orders.
+
+```
+Select sum(purch_amt) from orders;
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-aggregate-function-exercise-1.php)
+
+## 2. Write a SQL statement to find the average purchase amount of all orders.
+
+```
+Select avg(purch_amt) from orders;
+```
+
+```
+Select (sum(purch_amt) / count(ord_no)) from orders;
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-aggregate-function-exercise-2.php)
+
+## 3. Write a SQL statement to find the number of salesmen currently listing for all of their customers.
+
+```
+Select count(distinct salesman_id) from orders;
+```
+
+[Original solution](http://www.w3resource.com/sql-exercises/sql-aggregate-function-exercise-3.php)

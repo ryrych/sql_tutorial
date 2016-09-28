@@ -425,7 +425,7 @@ Select * from salesmen where name like 'N__l%';
 ## 12. Write a SQL statement to find those rows from the table testtable which contain the escape character underscore ( _ ) in its column 'col1'.
 
 ```
-Select * from salesmen where city = 'Paris' or city = 'Rome';
+Select * from testables where col1 like '%/_%' escape '/';
 ```
 
-[Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-11.php)
+[Original solution](http://www.w3resource.com/sql-exercises/sql-wildcard-special-operator-exercise-12.php)
